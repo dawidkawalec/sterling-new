@@ -1,0 +1,88 @@
+.faq-section {
+  padding: 100px 0;
+}
+
+.faq-section .card {
+  border: none;
+}
+
+.faq-section .card .card-header {
+  padding: 0;
+  border: none;
+}
+
+.faq-section .card .card-header button {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.03);
+  text-align: left;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  line-height: 28px;
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.faq-section .card .card-header button:not(.collapsed) {
+  border-bottom: 3px solid #FEED00;
+}
+
+.faq-section .card .card-body {
+  color: #222222;
+  opacity: 0.7;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .faq-section .image {
+    margin-top: 100px;
+  }
+  .faq-section .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.faq-section .image .image-content {
+  position: relative;
+}
+
+.faq-section .image .image-content:before {
+  content: "";
+  width: 82.4px;
+  height: 82.4px;
+  background: url(/wp-content/themes/sterlink/inc/assets/images/box-why-dots.svg);
+  position: absolute;
+  background-size: cover;
+  left: 111px;
+  top: -30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 1;
+}
+
+.faq-section .image .image-content:after {
+  content: '?';
+  width: 144px;
+  height: 159px;
+  background: #FEED00;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 38px;
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=faq.css.map */

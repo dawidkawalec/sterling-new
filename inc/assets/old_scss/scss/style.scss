@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
+
+/* 
+Here will go all custom scss for theme
+*/
+
+$dark: #2a2b4b;
+$dark2: #292a4b;
+$white: #fff;
+$all_tr: all .5s;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media(min-width: 1350px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.main-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    a {
+        font-size: 14px;
+    }
+
+    &.main-btn-yellow {
+        background: #FEED00;
+        color: #000;
+        min-width: 224px;
+        text-align: center;
+        padding: 0 20px;
+        min-height: 45px !important;
+
+        @media(max-width: 768px) {
+            min-width: 184px;
+        }
+
+        a {
+            font-weight: 600;
+            color: #000 !important;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            &:hover {
+                &:after {
+                    transform: translateX(10px);
+                }
+            }
+
+            &:after {
+                content: "";
+                background: url(/wp-content/themes/sterlink/inc/assets/images/arrow-black.svg);
+                width: 26px;
+                height: 10px;
+                display: block;
+                margin-left: 10px;
+                position: relative;
+                transition: all 0.4s;
+            }
+        }
+    }
+
+    &.main-btn-black {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        min-width: 224px;
+        text-align: center;
+        padding: 0 20px;
+        min-height: 45px !important;
+
+        @media(max-width: 768px) {
+            min-width: 184px;
+        }
+
+        a {
+            font-weight: 600;
+            color: #fff !important;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            &:hover {
+                &:after {
+                    transform: translateX(10px);
+                }
+            }
+
+            &:after {
+                content: "";
+                background: url(/wp-content/themes/sterlink/inc/assets/images/arrow-white.svg);
+                width: 26px;
+                height: 10px;
+                display: block;
+                margin-left: 10px;
+                position: relative;
+                transition: all 0.4s;
+            }
+        }
+    }
+
+    &.main-btn-black-bg {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 0 20px;
+        width: 255px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-weight: 600;
+            color: #fff !important;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    }
+}
+
+.title-section {
+    text-align: center;
+    padding: 0 0 75px 0;
+
+    span {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #FEED00;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 130%;
+        color: #000;
+        padding: 0;
+        margin: 0;
+
+        @media(max-width: 992px) {
+            font-size: 33px;
+        }
+
+        @media(max-width: 768px) {
+            font-size: 19px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.log-in {
+    ul {
+        padding: 0;
+        margin: 0 0 0 30px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 12px 20px;
+                text-decoration: none;
+                transition: all .4s;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@import "hamburger";
+@import "header";
+@import "banner";
+@import "about";
+@import "why";
+@import "porady";
+@import "work";
+@import "faq";
+@import "cta";
+@import "opinion";
+@import "oursugest";
+@import "page";
+@import "login";
+@import "cart";
+@import "contact";
+@import "product";
+
+.site-footer {
+    background-color: #000 !important;
+
+    @media(max-width: 992px) {
+        text-align: center;
+    }
+
+    .contact {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            @media(max-width: 992px) {
+                justify-content: center;
+            }
+
+            @media(min-width: 992px) {
+                justify-content: flex-end;
+            }
+
+            li {
+                list-style-type: none;
+                margin-left: 25px;
+
+                @media(max-width: 992px) {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                a {
+                    color: #fff !important;
+
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        display: flex;
+
+        @media(max-width: 992px) {
+            justify-content: center;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            li {
+                list-style-type: none;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .social {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            @media(max-width: 992px) {
+                justify-content: center;
+            }
+
+            li {
+                list-style-type: none;
+                margin-right: 25px;
+
+                a {
+                    color: #fff !important;
+
+                    &:hover {
+                        color: #FEED00 !important;
+                    }
+
+                    i {
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy,
+    .author {
+        color: #fff !important;
+        opacity: 0.3;
+    }
+}
+
+.container.container-title-fixed {
+    position: relative;
+
+    @media(max-width: 992px) {
+        display: none;
+    }
+}
+
+.container.container-title-fixed span {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #222222;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    height: 0;
+    -webkit-transform: rotate(90deg);
+    transform-origin: bottom left;
+    display: flex;
+    align-items: center;
+    position: relative !important;
+}
+
+.container.container-title-fixed span:before {
+    content: '';
+    width: 97px;
+    height: 2px;
+    background: #222222;
+    display: block;
+    margin-right: 30px;
+    position: relative !important;
+}
+
+.oursugest-section .container.container-title-fixed span {
+    top: -160px;
+}
+
+.work-section .container.container-title-fixed span {
+    top: -160px;
+}
+
+.about-section .container.container-title-fixed span {
+    left: 100%;
+    top: 160px;
+}
+
+.why-section .container.container-title-fixed span {
+    top: -160px;
+}
+
+.faq-section .container.container-title-fixed span {
+    top: -160px;
+}
+
+
+
+//shoppage
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    padding: .5em 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #24292e;
+    display: block;
+    font-weight: 800;
+    margin-bottom: .5em;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.woocommerce-Price-currencySymbol {
+    margin-left: 4px;
+    font-size: 1rem;
+}
+
+.woocommerce a.button {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: #24292e;
+    background-color: #feed00;
+    border: 0;
+    display: block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    text-align: center;
+    padding: 1em 3em;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}

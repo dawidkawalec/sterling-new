@@ -1,0 +1,82 @@
+.home {
+    .faq-section {
+        @media(max-width: 992px) {
+            padding: 100px 0 40px;
+        }
+    }
+}
+
+.faq-section {
+    padding: 100px 0;
+    .card {
+        border: none;
+        .card-header {
+            padding: 0;
+            border: none;
+            button {
+                border-bottom: 3px solid rgba(0, 0, 0, .03);
+                text-align: left;
+                padding: 20px 0;
+                width: 100%;
+                font-size: 20px;
+                line-height: 28px;
+                color: #222222;
+                font-weight: 700;
+                text-decoration: none;
+                @media(max-width: 768px) {
+                    font-size: 17px;
+                }
+                &:not(.collapsed) {
+                    border-bottom: 3px solid #FEED00;
+                }
+            }
+        }
+        .card-body {
+            color: #222222;
+            opacity: 0.7;
+            padding: 30px 0;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+    }
+    .image {
+        @media(max-width: 992px) {
+            margin-top: 100px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .image-content {
+            position: relative;
+            &:before {
+                content: "";
+                width: 82.4px;
+                height: 82.4px;
+                background: url(/wp-content/themes/sterlink/inc/assets/images/box-why-dots.svg);
+                position: absolute;
+                background-size: cover;
+                left: 111px;
+                top: -30px;
+                transition: all 0.4s;
+                z-index: 1;
+            }
+            &:after {
+                content: '?';
+                width: 144px;
+                height: 159px;
+                background: #FEED00;
+                font-weight: bold;
+                font-size: 100px;
+                line-height: 38px;
+                position: absolute;
+                left: -20px;
+                top: -40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
