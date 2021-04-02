@@ -1,7 +1,8 @@
 .calltoaction {
-    h1 {
+    h2 {
         color: $white;
         font-weight: 700;
+        font-size: 30px;
         @media(min-width: 992px) {
             font-size: 50px;
         }

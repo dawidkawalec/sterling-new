@@ -154,6 +154,12 @@ body {
     padding: 0 0 75px 0;
 }
 
+@media (max-width: 768px) {
+    .title-section {
+        padding: 0 0 45px 0;
+    }
+}
+
 .title-section span {
     font-weight: 800;
     font-size: 18px;
@@ -175,7 +181,7 @@ body {
     bottom: 0;
 }
 
-.title-section h4 {
+.title-section h2 {
     font-weight: 600;
     font-size: 50px;
     line-height: 130%;
@@ -185,15 +191,8 @@ body {
 }
 
 @media (max-width: 992px) {
-    .title-section h4 {
-        font-size: 33px;
-    }
-}
-
-@media (max-width: 768px) {
-    .title-section h4 {
-        font-size: 19px;
-        margin-top: 10px;
+    .title-section h2 {
+        font-size: 33px !important;
     }
 }
 
@@ -333,7 +332,6 @@ header#hamburger .container {
         top: 56px;
         right: 0;
         background: #feed00;
-        height: auto !important;
     }
     header#hamburger .container .navbar .main-btn.main-btn-yellow {
         margin-top: 10px;
@@ -351,7 +349,7 @@ header#hamburger .navbar-nav {
     width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     header#hamburger .navbar-nav li {
         display: flex;
         align-items: center;
@@ -375,45 +373,8 @@ header#hamburger .navbar-nav li a {
 
 @media (max-width: 1200px) {
     .menu_basket a {
-        padding: 0 !important;
-        margin: 5px 3px 3px 3px !important;
-        display: block !important;
-    }
-    .log-in ul {
+        padding: 0 3px;
         margin: 0;
-    }
-    /* mob  */
-    li.quest ul.dropdown-menu {
-        position: relative !important;
-        opacity: 1!important;
-        display: block !important;
-        top: 0!important;
-        border: 0!important;
-        padding: 0px 31px!important;
-    }
-    .log-in li.quest {
-        display: flex;
-        flex-direction: column;
-    }
-    li.quest ul.dropdown-menu li {
-        width: unset !important;
-    }
-    li.quest ul.dropdown-menu li a {
-        background: transparent!important;
-        border: 0!important;
-        color: #000 !important;
-    }
-    .log-in ul li a {
-        border: 0!important;
-        padding: 4px 4px 4px 3px!important;
-        color: #000 !important;
-        font-size: 14px!important;
-    }
-    li.quest ul.dropdown-menu li a:hover {
-        background: transparent !important;
-    }
-    .log-in li.quest>a {
-        margin: 1px 0!important;
     }
 }
 
@@ -562,7 +523,7 @@ header#hamburger .navbar-nav li a {
     bottom: 0;
 }
 
-.about-section h3 {
+.about-section h2 {
     font-weight: 600;
     font-size: 50px;
     line-height: 130%;
@@ -571,7 +532,13 @@ header#hamburger .navbar-nav li a {
     margin: 0;
 }
 
-.about-section h5 {
+@media (max-width: 992px) {
+    .about-section h2 {
+        font-size: 33px !important;
+    }
+}
+
+.about-section h3 {
     font-size: 24px;
     line-height: 38px;
     color: #0B0B0B;
@@ -701,7 +668,7 @@ header#hamburger .navbar-nav li a {
     bottom: 0;
 }
 
-.porady-section .container .left h3 {
+.porady-section .container .left h2 {
     font-weight: 500;
     font-size: 50px;
     line-height: 130%;
@@ -711,8 +678,8 @@ header#hamburger .navbar-nav li a {
 }
 
 @media (max-width: 992px) {
-    .porady-section .container .left h3 {
-        font-size: 30px !important;
+    .porady-section .container .left h2 {
+        font-size: 33px !important;
     }
 }
 
@@ -754,7 +721,7 @@ header#hamburger .navbar-nav li a {
     transition: all 0.4s;
 }
 
-.porady-section .container .yellow-box h4 {
+.porady-section .container .yellow-box h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 38px;
@@ -932,7 +899,7 @@ header#hamburger .navbar-nav li a {
 
 @media (max-width: 992px) {
     .home .faq-section {
-        padding: 100px 0 40px;
+        padding: 40px 0 40px;
     }
 }
 
@@ -1023,13 +990,14 @@ header#hamburger .navbar-nav li a {
     justify-content: center;
 }
 
-.calltoaction h1 {
+.calltoaction h2 {
     color: #fff;
     font-weight: 700;
+    font-size: 30px;
 }
 
 @media (min-width: 992px) {
-    .calltoaction h1 {
+    .calltoaction h2 {
         font-size: 50px;
     }
 }
@@ -1037,6 +1005,12 @@ header#hamburger .navbar-nav li a {
 .opinion-section {
     position: relative;
     padding-top: 100px;
+}
+
+@media (max-width: 992px) {
+    .opinion-section {
+        padding-top: 0;
+    }
 }
 
 .opinion-section:after {
@@ -1068,6 +1042,12 @@ header#hamburger .navbar-nav li a {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -100px;
+}
+
+@media (max-width: 992px) {
+    .opinion-section .carousel-content {
+        margin-top: -60px;
+    }
 }
 
 .opinion-section .carousel-content .owl-item .item .item-content {
@@ -1432,7 +1412,7 @@ header#hamburger .navbar-nav li a {
 .account-page #primary {
     max-width: 1407px;
     margin: 0 auto;
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 140px 30px;
 }
 

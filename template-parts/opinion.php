@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <span>Opinie</span>
-                    <h4>Opinie o nas</h4>
+                    <h2>Opinie o nas</h2>
                 </div>
             </div>
         </div>
@@ -46,11 +46,7 @@
                     <div class="item">
                         <div class="item-content">
                             <div class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.
+                                <?php the_content(); ?>
                             </div>
                             <div class="autor">
                                 <span><?php the_title() ?>,</span>

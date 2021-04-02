@@ -7,6 +7,25 @@
  * @package WP_Bootstrap_Starter
  */
 
+
+add_filter( 'woocommerce_product_tabs', 'misha_remove_description_tab', 11 );
+ 
+function misha_remove_description_tab( $tabs ) {
+ 
+	unset( $tabs['description'] );
+	return $tabs;
+ 
+}
+
+add_filter( 'woocommerce_product_tabs', 'misha_remove_additional_information' );
+ 
+function misha_remove_additional_information( $tabs ) {
+ 
+	unset( $tabs['additional_information'] );
+	return $tabs;
+ 
+}
+
 add_action( 'init', 'woo_remove_wc_breadcrumbs' );
 function woo_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );

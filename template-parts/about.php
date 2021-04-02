@@ -22,7 +22,7 @@
             <div class="col-lg-7 pr-lg-5">
                 <span class="text-uppercase">Jak to działa</span>
                 <?php if ( $tytul_4 = get_field( 'tytul_4' ) ) : ?>
-	                <h3 class="my-3"><?php echo esc_html( $tytul_4 ); ?></h3>
+	                <h2 class="my-3"><?php echo esc_html( $tytul_4 ); ?></h2>
                 <?php endif; ?>
                 <?php if ( $kim_jestesmy = get_field( 'kim_jestesmy', false, false ) ) : ?>
                     <?php echo $kim_jestesmy; ?>

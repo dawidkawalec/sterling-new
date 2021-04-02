@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <span>Jak to działa</span>
-                    <h4>Jak to działa?</h4>
+                    <h2>Jak to działa?</h2>
                 </div>
             </div>
         </div>

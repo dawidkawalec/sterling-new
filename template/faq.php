@@ -28,7 +28,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-lg-12">
                             <span>NAjczęstsze pytania</span>
-                            <h4>FAQ</h4>
+                            <h2>FAQ</h2>
                         </div>
                     </div>
                 </div>

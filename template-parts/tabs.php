@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <span>Nasze porady</span>
-                    <h4>Masz problem i chcesz szybko<br>uzyskać poradę prawnika?</h4>
+                    <h2>Masz problem i chcesz szybko<br>uzyskać poradę prawnika?</h2>
                 </div>
             </div>
         </div>

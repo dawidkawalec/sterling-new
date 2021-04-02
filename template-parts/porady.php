@@ -15,7 +15,7 @@
         <div class="row align-items-lg-end">
             <div class="col-lg-6 left pr-lg-5 text-center text-lg-left">
                 <span class="text-uppercase"><?php if ( $title_2 = get_field( 'title_2' ) ) : ?> <?php echo esc_html( $title_2 ); ?> <?php endif; ?></span>
-                <h3 class="my-3"><?php if ( $subtitle_2 = get_field( 'subtitle_2' ) ) : ?> <?php echo esc_html( $subtitle_2 ); ?> <?php endif; ?></h3>
+                <h2 class="my-3"><?php if ( $subtitle_2 = get_field( 'subtitle_2' ) ) : ?> <?php echo esc_html( $subtitle_2 ); ?> <?php endif; ?></h2>
                 <p><?php if ( $subtitle_2 = get_field( 'subtitle_2' ) ) : ?> <?php echo esc_html( $subtitle_2 ); ?> <?php endif; ?></p>
                 <!-- buttons -->
                 <?php if ( $buttons_3 = get_field( 'buttons_3', false, false ) ) : ?>

@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <span>Warto</span>
-                    <h4>Dlaczego warto</h4>
+                    <h2>Dlaczego warto</h2>
                 </div>
             </div>
         </div>

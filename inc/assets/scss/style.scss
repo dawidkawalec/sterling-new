@@ -142,6 +142,9 @@ body {
 .title-section {
     text-align: center;
     padding: 0 0 75px 0;
+    @media(max-width: 768px) {
+        padding: 0 0 45px 0;
+    }
     span {
         font-weight: 800;
         font-size: 18px;
@@ -161,7 +164,7 @@ body {
             bottom: 0;
         }
     }
-    h4 {
+    h2 {
         font-weight: 600;
         font-size: 50px;
         line-height: 130%;
@@ -169,12 +172,12 @@ body {
         padding: 0;
         margin: 0;
         @media(max-width: 992px) {
-            font-size: 33px;
+            font-size: 33px !important;
         }
-        @media(max-width: 768px) {
-            font-size: 19px;
-            margin-top: 10px;
-        }
+        // @media(max-width: 768px) {
+        //     font-size: 19px;
+        //     margin-top: 10px;
+        // }
     }
 }
 

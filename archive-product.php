@@ -29,8 +29,8 @@ get_header( );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header">
-    <div class="container">
+<header class="woocommerce-products-header header-page">
+<div class="container p-0">
         <div class="row">
             <div class="col-lg-12">
                 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
@@ -91,11 +91,8 @@ do_action( 'woocommerce_before_main_content' );
 																<div class="item">
 																	<div class="item-content">
 																		<div class="desc">
-																			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-																			incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-																			ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-																			labore et dolore magna aliqua.
+																		<?php the_content(); ?>
+
 																		</div>
 																		<div class="autor">
 																			<span><?php the_title() ?>,</span>

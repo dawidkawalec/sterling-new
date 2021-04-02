@@ -1470,7 +1470,8 @@ li.quest ul.dropdown-menu li {
     background-position: center center;
 }
 
-.archive header.woocommerce-products-header h1 {
+
+/* .archive header.woocommerce-products-header h1 {
     color: #fff;
     text-transform: uppercase;
     font-size: 50px;
@@ -1488,8 +1489,9 @@ li.quest ul.dropdown-menu li {
         margin-top: 0;
         margin-bottom: 30px;
     }
-}
+} */
 
+.page-template-contact #hamburger,
 .archive #hamburger {
     background: transparent !important;
 }
@@ -1511,6 +1513,15 @@ li.quest ul.dropdown-menu li {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 50px;
+}
+
+@media(max-width: 768px) {
+    .archive .widget h3 {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
 }
 
 .archive ul.product-categories>li>a {

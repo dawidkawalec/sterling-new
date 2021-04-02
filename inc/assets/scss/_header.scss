@@ -55,7 +55,7 @@ header#hamburger {
         // justify-content: space-between;
         width: 100%;
         li {
-            @media(min-width: 992px) {
+            @media(min-width: 1200px) {
                 display: flex;
                 align-items: center;
                 margin-left: 25px;
