@@ -29,9 +29,9 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
         <?php endif; ?>
 
-        <div class="row <?php if ( is_user_logged_in() ) {  } else { echo 'align-items-lg-center'; } ?>">
+        <div class="row ">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="logincontent">
+                <div class="logincontent ">
                     <h2><?php esc_html_e( 'Login', 'woocommerce' ); ?></h2>
                     <span>Masz już swoje konto?</span>
 

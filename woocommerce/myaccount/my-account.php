@@ -25,8 +25,8 @@ defined( 'ABSPATH' ) || exit;
 ;?>
 <div class="row">
     <div class="col-lg-5 mb-5 mb-lg-0">
-        <div class="logincontent">
-            <h2 style="margin-bottom: 60px;">Moje konto</h2>
+        <div class="logincontent logincontentloginin">
+            <h2 style=" margin-bottom: 60px;">Moje konto</h2>
 
             <div style="margin-left: 4.3rem;">
                 <?php

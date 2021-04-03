@@ -30,7 +30,7 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 <header class="woocommerce-products-header header-page">
-    <div class="container p-0">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
@@ -75,8 +75,8 @@ do_action( 'woocommerce_before_main_content' );
                                         <div class="owl-stage-outer">
                                             <div class="owl-stage">
                                                 <div class="owl-item">
-                                                    
-															<?php  
+
+                                                    <?php  
 														$args_query = array(
 															'post_type' => 'opinie',
 															'posts_per_page' => 1,
@@ -88,23 +88,23 @@ do_action( 'woocommerce_before_main_content' );
 														if ( $query->have_posts() ) {
 															while ( $query->have_posts() ) {
 																$query->the_post();  ?>
-																
-																<div class="item">
-																	<div class="item-content">
-																		<div class="desc">
-																			<?php the_content() ?>
-																		</div>
-																		<div class="autor">
-																			<span><?php the_title() ?>,</span>
-																			<span>
-																				<?php if ( $miasto = get_field( 'miasto', false, false ) ) : ?>
-																					<?php echo esc_html( $miasto ); ?>
-																				<?php endif; ?>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-														<?php }
+
+                                                    <div class="item">
+                                                        <div class="item-content">
+                                                            <div class="desc">
+                                                                <?php the_content() ?>
+                                                            </div>
+                                                            <div class="autor">
+                                                                <span><?php the_title() ?>,</span>
+                                                                <span>
+                                                                    <?php if ( $miasto = get_field( 'miasto', false, false ) ) : ?>
+                                                                    <?php echo esc_html( $miasto ); ?>
+                                                                    <?php endif; ?>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <?php }
 														} else {
 
 														}
@@ -129,7 +129,7 @@ do_action( 'woocommerce_before_main_content' );
             <div class="col-lg-9">
 
                 <div class="cat-name-yello">
-				<?php woocommerce_page_title(); ?>
+                    <?php woocommerce_page_title(); ?>
                 </div>
 
                 <?php
